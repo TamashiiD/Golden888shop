@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html,
 body,
 div,
@@ -137,173 +138,218 @@ table {
 
 
 :root {
-	--bgcolor: rgb(2, 0, 36);
+    --bgcolor: rgb(2, 0, 36);
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 body {
-	min-height: 100vh;
-	display: grid;
-	place-items: center;
-	background: var(--bgcolor);
-	color: white;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--bgcolor);
+    color: white;
 }
+
 ul {
-	list-style: none;
+    list-style: none;
 }
+
 h1 {
-	font-size: 5rem;
-	position: relative;
-	text-transform: uppercase;
-	transition: all 300ms ease;
-	width: fit-content;
-	cursor: pointer;
+    font-size: 5rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    width: fit-content;
+    cursor: pointer;
 }
+
 h1:hover {
-	transform: skew(10deg);
+    transform: skew(10deg);
 }
+
 h1::before {
-	content: attr(data-name);
-	position: absolute;
-	top: 0;
-	left: -20px;
-	background: var(--bgcolor);
-	height: 3rem;
-	overflow: hidden;
-	transition: all 300ms ease;
-	padding-left: 20px;
+    content: attr(data-name);
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background: var(--bgcolor);
+    height: 3rem;
+    overflow: hidden;
+    transition: all 300ms ease;
+    padding-left: 20px;
 }
+
 h1:hover::before {
-	top: -3px;
-	left: 0px;
-	color: gold;
+    top: -3px;
+    left: 0px;
+    color: gold;
 }
 
 h1::after {
-	content: "";
-	height: 4px;
-	width: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: gold;
-	transition: all 300ms ease;
+    content: "";
+    height: 4px;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gold;
+    transition: all 300ms ease;
 }
+
 h1:hover::after {
-	width: 120%;
-	outline: 5px solid rgb(2, 0, 36);
+    width: 120%;
+    outline: 5px solid rgb(2, 0, 36);
 }
 
 /* //////////////////////////// */
 
 /*  links sidebar CSS  */
 ._social-links {
-	position: fixed;
-	right: 0;
-	top: 50%;
-	transform: translatey(-50%);
-	padding: 1em 0.5em 1em 1em;
-	background: #fafafa;
-	border-radius: 0.5em 0 0 0.5em;
-	box-shadow: -4px 0px 0px hotpink;
-	transition: all 300ms ease;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    padding: 1em 0.5em 1em 1em;
+    background: #fafafa;
+    border-radius: 0.5em 0 0 0.5em;
+    box-shadow: -4px 0px 0px hotpink;
+    transition: all 300ms ease;
 }
 
 ._social-links:hover {
-	box-shadow: -8px 0px 20px hotpink;
-	padding: 1em;
+    box-shadow: -8px 0px 20px hotpink;
+    padding: 1em;
 }
 
 ._links-list {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
+
 ._social-link a {
-	color: #111;
-	font-size: 1.5rem;
-	transition: all 200ms ease;
+    color: #111;
+    font-size: 1.5rem;
+    transition: all 200ms ease;
 }
+
 ._social-link a:visited {
-	color: #111;
+    color: #111;
 }
+
 ._social-link a:hover {
-	color: hotpink;
-	font-size: 1.75rem;
+    color: hotpink;
+    font-size: 1.75rem;
 }
 
 /* //////////////////////////// */
 a {
-    color: white; /* Set the color to white */
-    text-decoration: none; /* Remove underline (optional) */
+    color: white;
+    /* Set the color to white */
+    text-decoration: none;
+    /* Remove underline (optional) */
 }
 
-span{
-    transform: translate(-50%,-50%);
+span {
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    font-family: 'Times New Roman',serif;
+    font-family: 'Times New Roman', serif;
     letter-spacing: 5px;
     font-size: 20px;
     font-weight: bold;
-    background-image: linear-gradient(
-     to right,
-     #462523 0,
-            #cb9b51 22%, 
-     #f6e27a 45%,
-     #f6f2c0 50%,
-     #f6e27a 55%,
-     #cb9b51 78%,
-     #462523 100%
-     );
-    color:transparent;
-    -webkit-background-clip:text;
- 
- }
- .donate{
-    margin-bottom: 40px;
- }
+    background-image: linear-gradient(to right,
+            #462523 0,
+            #cb9b51 22%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%,
+            #462523 100%);
+    color: transparent;
+    -webkit-background-clip: text;
 
- #globe{
-  position: relative;
-  height: 300px;
-  width: 300px;
-  margin: 3rem auto;
-  background: #888 url(https://www.surfertoday.com/images/stories/physical-world-map.jpg) 0 0 repeat;
-  border-radius: 50%;
-  background-size: 630px;
-  animation: rotates 10s linear infinite;
-  transition: transform 200ms linear;
-  transform-style: preserve-3d;
-  box-shadow: inset 20px 0 80px 6px rgb(0, 0, 0) ;
-  color: #000;
+}
+
+.donate {
+    margin-bottom: 40px;
+}
+
+#globe {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 3rem auto;
+    background: #888 url(https://www.surfertoday.com/images/stories/physical-world-map.jpg) 0 0 repeat;
+    border-radius: 50%;
+    background-size: 630px;
+    animation: rotates 10s linear infinite;
+    transition: transform 200ms linear;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0 80px 6px rgb(0, 0, 0);
+    color: #000;
 }
 
 
 @keyframes rotates {
-0%{
-  background-position: 0 0;
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 630px 0;
+    }
 }
-100%{
-  background-position: 630px 0;
-}
-}
-#menu{
+
+#menu {
     display: flex;
     flex-direction: column;
     margin-right: 60%;
 }
-.heading{
+
+.heading {
     margin-top: 30px;
 }
 
 .email2 {
     margin-bottom: 25px;
+}
+
+.linkdesign {
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    font-weight: bold;
+    /* Golden color */
+    color: black;
+    /* Text color */
+    border: 2px solid #b8860b;
+    /* Dark golden border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow for a lifted effect */
+    margin-top: 25px;
+}
+
+#thelinks{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    max-height: 200px;
+    max-width: 200px;
+}
+.inthelinks{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
