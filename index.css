@@ -450,3 +450,77 @@ margin-right: 200px;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+
+
+
+label {
+    display: block;
+    font-size: 13px;
+}
+
+.subfield label {
+    display: none;
+}
+
+.addressfield .subfield {
+    display: block;
+    width: 180px;
+}
+
+.addressfield input,
+.addressfield select {
+    width: 150px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 400px;
+    border: 1px solid #999999;
+    padding: 5 5 15 5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pageTitle {
+    background-color: #DDDDDD;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+}
+
+.pageTitleAlert {
+    background-color: #FF0000;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.pageTitleSuccess {
+    background-color: #33CC00;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.formLabel {
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.error {
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.small {
+    font-size: 11px;
+}
