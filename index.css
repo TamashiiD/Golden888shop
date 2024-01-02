@@ -388,3 +388,59 @@ margin: 20px;
     text-align: center;
     margin-bottom: 100px;
 }
+
+@media only screen and (max-width: 568px) {
+    /* Add specific styles for the iPhone SE here */
+    h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: center; /* Center the text horizontally */
+      }
+    
+      #paypal-button-container-P-30F500243G8470338MWJEAAA {
+        max-width: 300px;
+margin-left: 50px;      }
+    
+      h2 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 199px;
+        text-align: center; /* Center the text horizontally */
+      }
+
+      #thelinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .inthelinks{
+        margin-bottom: 20px;
+      }
+      .founders{
+        display: flex;
+        flex-direction: column;
+margin-right: 200px;   
+   }
+      .founderimage{
+        max-width: 250px;
+        max-height: 250px;
+        margin-right: 200px;
+      }
+      .about{
+        max-width: 350px;
+        margin-right: 275px;
+      }
+      
+      footer{
+        margin-right: 150px
+      }
+      .email2{
+        margin-right: 170px;
+      }
+     .about0{
+        margin-right: 240px;
+     }
+}
