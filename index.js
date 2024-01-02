@@ -9,3 +9,4 @@ function handleMouseHover() {
 }
 // Add an event listener for the 'mouseover' event
 main.addEventListener('mouseover', handleMouseHover);
+
