@@ -280,6 +280,7 @@ span {
 
 .donate {
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 #globe {
@@ -443,4 +444,9 @@ margin-right: 200px;
      .about0{
         margin-right: 240px;
      }
+}
+
+#DETAILSABOUT{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
